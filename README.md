@@ -7,7 +7,7 @@ The web app allows users to easily access and analyze stock data, which can assi
 
 
 ## Important Components in the Project
-In this section, a brief explanation is provided of the components.
+In this section, a brief explanation is provided of the components that are used.
 ### Streamlit
 Streamlit is a Python library for creating interactive web applications.
 It simplifies the process of building and deploying data analysis and machine learning tools.
