@@ -7,8 +7,9 @@ import math
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 #from tensorflow import keras
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense,LSTM
+from tensorflow import keras
+from keras.models import Sequential
+from keras.layers import Dense, LSTM
 import matplotlib.pyplot as plt
 plt.style.use('fivethirtyeight')
 
@@ -24,7 +25,7 @@ selected_stock = st.selectbox('Select dataset for prediction', stocks)
 
 
 
-@st.cache
+@st.cache_resource
 def load_data(ticker):
     df =yf.download(ticker, START,TODAY)
     df.reset_index(inplace=True)
